@@ -166,6 +166,7 @@ select {
 
 .main-data-form-name {
   margin: 2rem 0 2rem 0;
+  width: 67%;
 }
 
 .main-data-form-name div {
@@ -313,6 +314,10 @@ footer {
   .main-data-form-id {
     flex-direction: column;
     width: auto;
+  }
+
+  .main-data-form-name {
+    width: 100%;
   }
 
   .main-data-form-id .flex {
