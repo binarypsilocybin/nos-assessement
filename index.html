@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="./script.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Verizon Assessement</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <nav class="navbar">
+          <a href="#" class="navbar-logo">
+            <img src="/images/logo-verizon.svg" alt="logo-verizon" />
+          </a>
+          <ul class="nav-menu">
+            <li class="nav-item about">
+              <a href="#" class="nav-link">Sobre a Verizon</a
+              ><img class="icon-arrow" src="./images/arrow-icon.svg" />
+            </li>
+            <li class="nav-item services">
+              <a href="#" class="nav-link">Produtos & Serviços</a
+              ><img class="icon-arrow" src="./images/arrow-icon.svg" />
+            </li>
+            <li class="nav-item store">
+              <a href="#" class="nav-link">Loja Online</a
+              ><img class="icon-arrow" src="./images/arrow-icon.svg" />
+            </li>
+            <li class="nav-item help">
+              <a href="#" class="nav-link">Ajuda</a
+              ><img class="icon-arrow" src="./images/arrow-icon.svg" />
+            </li>
+            <li class="nav-item cart">
+              <a href="#" class="nav-link"
+                ><img src="./images/logo-cart.svg" alt="logo-cart"
+              /></a>
+              <p class="text-cart">Carrinho</p>
+              <img class="icon-arrow" src="./images/arrow-icon.svg" />
+            </li>
+            <li class="nav-item search">
+              <a href="#" class="nav-link"
+                ><img src="./images/logo-search.svg" alt="logo-search"
+              /></a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <a href="#" class="nav-link"
+              ><img src="./images/logo-search.svg" alt="logo-search"
+            /></a>
+            <a href="#" class="open-icon"
+              ><img src="./images/open-icon.svg" c />
+            </a>
+            <a href="#" class="close-icon"
+              ><img src="./images/close-icon.svg" c
+            /></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="hero-background">
+        <div class="hero-background-container">
+          <a href="#"
+            ><img src="./images/arrow-icon.svg" alt="" />
+            <p>Adesão a um tarifário</p></a
+          >
+        </div>
+      </div>
+      <div class="separators">
+        <hr class="separator-gray" />
+        <hr class="separator-red" />
+      </div>
+      <div class="main-container">
+        <div class="main-data-form">
+          <div class="main-data-info">
+            <div class="main-data-header">
+              <h2>Dados pessoais</h2>
+              <p>Preencha os seus dados pessoais.</p>
+            </div>
+            <div class="main-data-form-name">
+              <h4>Nome</h4>
+              <div class="flex">
+                <label for="name">Preencha o seu nome completo</label>
+                <input id="name" type="text" placeholder="Ex: José Peseiro" />
+              </div>
+            </div>
+            <div class="main-data-form-id">
+              <h4>Documentação de identificação</h4>
+              <div class="flex">
+                <label for="id-doc"
+                  >Escolha o seu documento de identificação:</label
+                >
+                <select id="id-doc" name="cars">
+                  <option value="cartao">Cartão de cidadão</option>
+                  <option value="bilhete">Bilhete de identidade</option>
+                  <option value="papel">Papel de identidade</option>
+                  <option value="livrete">Livrete de identidade</option>
+                </select>
+              </div>
+              <div class="flex">
+                <label for="id">Introduza o seu número de identificação:</label>
+                <input id="id" type="number" placeholder="Ex: 1234567" />
+              </div>
+              <div class="flex">
+                <label for="nif">Introduza o seu NIF:</label>
+                <input id="nif" type="number" placeholder="Ex: 1234567" />
+                <p id="warning-nif"></p>
+              </div>
+            </div>
+          </div>
+          <div class="main-data-contacts">
+            <div class="main-data-header">
+              <h2>Contactos</h2>
+              <p>Indique os seus contactos</p>
+            </div>
+            <div class="main-data-form-contacts">
+              <div class="flex">
+                <label for="mobile">Telemóvel:</label>
+                <input id="mobile" type="number" placeholder="Ex: 1234567" />
+              </div>
+              <div class="flex">
+                <label for="phone">Telefone:</label>
+                <input id="phone" type="number" placeholder="Ex: 1234567" />
+              </div>
+              <div class="flex">
+                <label for="email">Email:</label>
+                <input id="email" type="text" placeholder="Ex: 1234567" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <button class="btn-back">Voltar</button>
+        <button class="btn-continue" type="button" onclick="validatePhone()">
+          Continuar
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
